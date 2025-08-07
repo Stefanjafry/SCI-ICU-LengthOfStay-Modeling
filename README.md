@@ -16,61 +16,44 @@ The application showcases:
 
 Key Components:
 
-SQL Data Ingestion:
-
-PostgreSQL queries to extract ICU and hospital-level data
-
-Merging and joining across schema boundaries
-
-Exported to CSV for downstream preprocessing
+-SQL Data Ingestion:
+-PostgreSQL queries to extract ICU and hospital-level data
+-Merging and joining across schema boundaries
+-Exported to CSV for downstream preprocessing
 
 Exploratory Data Analysis (EDA):
 
-Distribution plots of LOS, age, and comorbidities
-
-Group-wise mortality and diagnostic pattern analysis
-
-Feature correlation matrices and log-transformed target variable inspection
-
-Outlier and skewness analysis
+-Distribution plots of LOS, age, and comorbidities
+-Group-wise mortality and diagnostic pattern analysis
+-Feature correlation matrices and log-transformed target variable inspection
+-Outlier and skewness analysis
 
 PCA + Clustering:
 
-Standard scaling and KNN/Simple imputation
-
-Principal Component Analysis to reduce multicollinearity and identify trends
-
-KMeans clustering with Silhouette Score optimization
-
-Kruskal-Wallis tests to assess LOS variance across clusters
-
-Cluster-specific summary statistics and visualizations
+-Standard scaling and KNN/Simple imputation
+-Principal Component Analysis to reduce multicollinearity and identify trends
+-KMeans clustering with Silhouette Score optimization
+-Kruskal-Wallis tests to assess LOS variance across clusters
+-Cluster-specific summary statistics and visualizations
 
 Niche ML Models (per cluster):
 
-GroupKFold-safe modeling pipelines
-
-Ridge, LightGBM, CatBoost, and XGBoost regressors
-
-Hyperparameter tuning and cluster-specific feature importance
-
-Evaluation using R², MAE, RMSE, MedAE
+-GroupKFold-safe modeling pipelines
+-Ridge, LightGBM, CatBoost, and XGBoost regressors
+-Hyperparameter tuning and cluster-specific feature importance
+-Evaluation using R², MAE, RMSE, MedAE
 
 General ML Model:
 
-Trained on all patients using consistent feature pipelines
-
-Compared against niche models to assess gains from segmentation
-
-Model interpretability planned via SHAP (in progress)
+-Trained on all patients using consistent feature pipelines
+-Compared against niche models to assess gains from segmentation
+-Model interpretability planned via SHAP (in progress)
 
 Evaluation Metrics:
 
-Custom metric functions for MAE, RMSE, R², MedAE
-
-Feature engineering and z-score normalization for numeric features
-
-Label encoding for categorical variables
+-Custom metric functions for MAE, RMSE, R², MedAE
+-Feature engineering and z-score normalization for numeric features
+-Label encoding for categorical variables
 
 File Structure:
 
