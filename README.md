@@ -6,19 +6,13 @@ Overview:
 
 The application showcases:
 
-Structured data extraction and transformation using PostgreSQL and Python
-
-Clinical data exploration and visualization for ICU patient populations
-
-Dimensionality reduction via Principal Component Analysis (PCA)
-
-KMeans clustering to uncover latent patient phenotypes
-
-Niche ML models trained per cluster for precision prediction
-
-A general regression model trained across all patient groups for benchmarking
-
-Custom metrics and evaluation logic (RMSE, MAE, MedAE, R², MAPE)
+- Structured data extraction and transformation using PostgreSQL and Python
+- Clinical data exploration and visualization for ICU patient populations
+- Dimensionality reduction via Principal Component Analysis (PCA)
+- KMeans clustering to uncover latent patient phenotypes
+- Niche ML models trained per cluster for precision prediction
+- A general regression model trained across all patient groups for benchmarking
+- Custom metrics and evaluation logic (RMSE, MAE, MedAE, R², MAPE)
 
 Key Components:
 
